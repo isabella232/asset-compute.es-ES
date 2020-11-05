@@ -1,6 +1,8 @@
 ---
 cloud: experience-cloud
 product: Asset Compute Service
+solution: Experience Manager
+type: Documentation
 audience: end-user
 user-guide-title: Guía del servicio de cómputo de recursos
 user-guide-description: Esta documentación [!DNL Asset Compute Service] cubre tareas como desarrollar, administrar, implementar y solucionar problemas del código personalizado.
@@ -12,7 +14,7 @@ getting-started-url: https://docs.adobe.com/content/help/en/experience-manager-c
 tutorials-title: Tutoriales de AEM
 tutorials-url: https://docs.adobe.com/content/help/en/experience-manager-learn/assets/overview.html
 translation-type: tm+mt
-source-git-commit: 5e2fa370db65a6dc727a2735f6b44aa49d7a8e48
+source-git-commit: ec2fd2e7c20ad9d104f95724a3970a433ac7d50f
 workflow-type: tm+mt
 source-wordcount: '134'
 ht-degree: 17%
