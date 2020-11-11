@@ -2,9 +2,9 @@
 title: Desarrollar para [!DNL Asset Compute Service].
 description: Cree aplicaciones personalizadas mediante [!DNL Asset Compute Service].
 translation-type: tm+mt
-source-git-commit: 127895cf1bab59546f9ba0be2b3b7a935627effb
+source-git-commit: 6de4e3cde9c38f2e23838f5d728dae23e15d2147
 workflow-type: tm+mt
-source-wordcount: '1496'
+source-wordcount: '1559'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Asegúrese de tener la CLI [de E/S de](https://github.com/adobe/aio-cli) Adobe i
 
    Lea aquí los componentes [principales de una aplicación](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#5-anatomy-of-a-project-firefly-application)de Firefly.
 
-   La aplicación de plantilla aprovecha el SDK [de cómputo de](https://github.com/adobe/asset-compute-sdk#asset-compute-sdk) recursos para cargar, descargar y orquestar representaciones de aplicaciones, de modo que los desarrolladores sólo necesitan implementar la lógica de aplicación personalizada. Dentro de la `actions/<worker-name>` carpeta, el `index.js` archivo es donde se agrega el código de aplicación personalizado.
+   La aplicación de plantilla aprovecha nuestro SDK [de](https://github.com/adobe/asset-compute-sdk#asset-compute-sdk) Asset compute para cargar, descargar y orquestar las representaciones de aplicaciones, de modo que los desarrolladores sólo necesitan implementar la lógica de aplicación personalizada. Dentro de la `actions/<worker-name>` carpeta, el `index.js` archivo es donde se agrega el código de aplicación personalizado.
 
 Consulte [ejemplo de aplicaciones](#try-sample) personalizadas para ver ejemplos e ideas de aplicaciones personalizadas.
 
@@ -82,7 +82,7 @@ La herramienta para desarrolladores que se utiliza para probar aplicaciones pers
 
 >[!NOTE]
 >
->Esto es independiente del almacenamiento de nube de [!DNL Adobe Experience Manager] como Cloud Service. Solo se aplica para desarrollar y probar con la herramienta para desarrolladores de Asset Compute.
+>Esto es independiente del almacenamiento de nube de [!DNL Adobe Experience Manager] como Cloud Service. Solo se aplica para desarrollar y probar con la herramienta para desarrolladores de Assets computes.
 
 Asegúrese de tener acceso a un contenedor [de almacenamiento en la nube](https://github.com/adobe/asset-compute-devtool#prerequisites)compatible. Este contenedor puede ser compartido por varios desarrolladores en diferentes proyectos según sea necesario.
 
@@ -96,7 +96,13 @@ Añada las siguientes credenciales para la herramienta para desarrolladores en e
    ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH=
    ```
 
-1. Añada las credenciales de Almacenamiento de S3 o Azure. Solo necesita acceder a una solución de almacenamiento en la nube.
+1. Si el archivo `console.json` no está en la raíz directamente de la aplicación Firefly, agregue la ruta absoluta al archivo JSON de integración de la consola de desarrollador de Adobe. Es el mismo [`console.json`](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#42-developer-is-not-logged-in-as-enterprise-organization-user) archivo que se descarga en el espacio de trabajo del proyecto. También puede utilizar el comando `aio app use <path_to_console_json>` en lugar de agregar la ruta al archivo ENV.
+
+   ```conf
+   ASSET_COMPUTE_INTEGRATION_FILE_PATH=
+   ```
+
+1. Añada las credenciales de almacenamiento de S3 o Azure. Solo necesita acceder a una solución de almacenamiento en la nube.
 
    ```conf
    # S3 credentials
@@ -113,7 +119,7 @@ Añada las siguientes credenciales para la herramienta para desarrolladores en e
 
 ## Ejecutar la aplicación {#run-custom-application}
 
-Antes de ejecutar la aplicación con Asset Compute Developer Tool, configure correctamente las [credenciales](#developer-tool-credentials).
+Antes de ejecutar la aplicación con la herramienta para desarrolladores de Asset compute, configure correctamente las [credenciales](#developer-tool-credentials).
 
 Para ejecutar la aplicación en la herramienta para desarrolladores, utilice `aio app run` command. Implementa la acción en Adobe I/O Runtime y inicio la herramienta de desarrollo en su equipo local. Esta herramienta se utiliza para probar las solicitudes de aplicación durante el desarrollo. A continuación se muestra un ejemplo de solicitud de representación:
 
@@ -128,7 +134,7 @@ Para ejecutar la aplicación en la herramienta para desarrolladores, utilice `ai
 
 >[!NOTE]
 >
->No utilice el `--local` indicador con el `run` comando. No funciona con las aplicaciones personalizadas ni con [!DNL Asset Compute] la herramienta para desarrolladores de Asset Compute. Las aplicaciones personalizadas son llamadas por los [!DNL Asset Compute Service] que no pueden acceder a las acciones que se ejecutan en los equipos locales del desarrollador.
+>No utilice el `--local` indicador con el `run` comando. No funciona con [!DNL Asset Compute] aplicaciones personalizadas ni con la herramienta para desarrolladores de Asset compute. Las aplicaciones personalizadas son llamadas por los [!DNL Asset Compute Service] que no pueden acceder a las acciones que se ejecutan en los equipos locales del desarrollador.
 
 Consulte [aquí](test-custom-application.md) cómo probar y depurar la aplicación. Cuando haya terminado de desarrollar la aplicación personalizada, [implemente la aplicación](deploy-custom-application.md)personalizada.
 
@@ -208,7 +214,7 @@ El `example-worker-animal-pictures` pasa un parámetro personalizado [`animal`](
 
 ## Compatibilidad con autenticación y autorización {#authentication-authorization-support}
 
-De forma predeterminada, las aplicaciones personalizadas de Asset Compute incluyen comprobaciones de autorización y autenticación para aplicaciones de Firefly. Esto se habilita estableciendo la `require-adobe-auth` anotación en `true` la `manifest.yml`.
+De forma predeterminada, las aplicaciones personalizadas de Asset compute vienen con las comprobaciones de autorización y autenticación de las aplicaciones de Firefly. Esto se habilita estableciendo la `require-adobe-auth` anotación en `true` la `manifest.yml`.
 
 ### Acceso a otras API de Adobe {#access-adobe-apis}
 
@@ -272,14 +278,14 @@ Una aplicación se ejecuta en un contenedor de Adobe I/O Runtime con [límites](
           concurrency: 1
 ```
 
-Debido al procesamiento más extenso que suelen realizar las aplicaciones de Asset Compute, es más probable que uno tenga que ajustar estos límites para obtener un rendimiento óptimo (lo suficientemente grande como para gestionar recursos binarios) y eficacia (no desperdiciar recursos debido a la memoria contenedor no utilizada).
+Debido al procesamiento más extenso que suelen realizar las aplicaciones de Asset compute, es más probable que uno tenga que ajustar estos límites para lograr un rendimiento óptimo (lo suficientemente grande como para gestionar recursos binarios) y una mayor eficiencia (no desperdiciar recursos debido a la memoria contenedor no utilizada).
 
 El tiempo de espera predeterminado para acciones en tiempo de ejecución es de un minuto, pero se puede aumentar estableciendo el `timeout` límite (en milisegundos). Si espera procesar archivos más grandes, aumente esta vez. Considere el tiempo total que se tarda en descargar el origen, procesar el archivo y cargar la representación. Si se agota el tiempo de espera de una acción, es decir, no devuelve la activación antes del límite de tiempo de espera especificado, Runtime descarta el contenedor y no lo reutiliza.
 
-Las aplicaciones de cálculo de recursos por naturaleza tienden a estar enlazadas a E/S de red y de disco. El archivo de origen debe descargarse primero, el procesamiento suele ser de alta E/S y, a continuación, las representaciones resultantes se cargan de nuevo.
+Las aplicaciones de asset compute por naturaleza tienden a estar enlazadas a E/S de red y de disco. El archivo de origen debe descargarse primero, el procesamiento suele ser de alta E/S y, a continuación, las representaciones resultantes se cargan de nuevo.
 
 La memoria disponible para un contenedor de acción se especifica `memorySize` en MB. Actualmente, esto también define cuánto acceso de CPU obtiene el contenedor y, lo que es más importante, es un elemento clave del costo de usar Runtime (los contenedores más grandes cuestan más). Utilice aquí un valor mayor cuando el procesamiento requiera más memoria o CPU, pero tenga cuidado de no desperdiciar recursos, ya que cuanto más grandes sean los contenedores, menor será el rendimiento general.
 
-Además, es posible controlar la concurrencia de acciones dentro de un contenedor mediante la `concurrency` configuración. Es el número de activaciones simultáneas que obtiene un solo contenedor (de la misma acción). En este modelo, el contenedor de acción es como un servidor Node.js que recibe varias solicitudes simultáneas, hasta ese límite. Si no se establece, el valor predeterminado en Tiempo de ejecución es 200, que es bueno para acciones de Firefly más pequeñas, pero generalmente es demasiado grande para las aplicaciones de Asset Compute debido a que su procesamiento local y actividad de disco son más intensos. Algunas aplicaciones, dependiendo de su implementación, también podrían no funcionar bien con la actividad simultánea. El SDK de cómputo de recursos garantiza que las activaciones se separan escribiendo archivos en distintas carpetas únicas.
+Además, es posible controlar la concurrencia de acciones dentro de un contenedor mediante la `concurrency` configuración. Es el número de activaciones simultáneas que obtiene un solo contenedor (de la misma acción). En este modelo, el contenedor de acción es como un servidor Node.js que recibe varias solicitudes simultáneas, hasta ese límite. Si no se establece, el valor predeterminado en Tiempo de ejecución es 200, que es bueno para acciones de Firefly más pequeñas, pero generalmente es demasiado grande para aplicaciones de Asset compute debido a que su procesamiento local y actividad de disco son más intensos. Algunas aplicaciones, dependiendo de su implementación, también podrían no funcionar bien con la actividad simultánea. El SDK de Asset compute garantiza que las activaciones se separen escribiendo archivos en distintas carpetas únicas.
 
 Pruebe las aplicaciones para encontrar los números óptimos para `concurrency` y `memorySize`. Contenedores más grandes = límite de memoria más alto podría permitir más concurrencia pero también podría ser derrochador para tráfico más bajo.
