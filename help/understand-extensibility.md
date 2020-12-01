@@ -1,6 +1,6 @@
 ---
-title: Comprender la ampliación [!DNL Asset Compute Service].
-description: Cuándo y cómo ampliar [!DNL Asset Compute Service] la funcionalidad para realizar el procesamiento personalizado de recursos.
+title: Obtenga información sobre la extensión [!DNL Asset Compute Service].
+description: Cuándo y cómo ampliar la funcionalidad [!DNL Asset Compute Service] para realizar el procesamiento personalizado de recursos.
 translation-type: tm+mt
 source-git-commit: 79630efa8cee2c8919d11e9bb3c14ee4ef54d0f3
 workflow-type: tm+mt
@@ -12,24 +12,24 @@ ht-degree: 1%
 
 # Introducción a la extensibilidad {#introduction-to-extensibilty}
 
-Muchos de los requisitos de representación, como convertir a formatos y cambiar el tamaño de las imágenes, son cumplidos por los Perfiles [de procesamiento [!DNL Experience Manager] como Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html). Los requerimientos comerciales más complejos pueden necesitar una solución creada a medida que se adapte a las necesidades de una organización. [!DNL Asset Compute Service] se puede ampliar creando aplicaciones personalizadas a las que se llama desde Perfiles de procesamiento en [!DNL Experience Manager]. Estas aplicaciones personalizadas se ocupan de los casos [de uso](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html)admitidos.
+Muchos requisitos de representación, como convertir a formatos y cambiar el tamaño de las imágenes, se tratan en [Perfiles de procesamiento en [!DNL Experience Manager] como Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html). Los requerimientos comerciales más complejos pueden necesitar una solución creada a medida que se adapte a las necesidades de una organización. [!DNL Asset Compute Service] se puede ampliar creando aplicaciones personalizadas a las que se llama desde Perfiles de procesamiento en  [!DNL Experience Manager]. Estas aplicaciones personalizadas se ocupan de los [casos de uso admitidos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html).
 
 >[!NOTE]
 >
->[!DNL Asset Compute Service] sólo está disponible para su uso con [!DNL Experience Manager] Cloud Service.
+>[!DNL Asset Compute Service] sólo está disponible para su uso  [!DNL Experience Manager] como Cloud Service.
 
-Las aplicaciones personalizadas son aplicaciones [de Project Firefly](https://github.com/AdobeDocs/project-firefly) sin encabezado. La ampliación [!DNL Asset Compute Service] con aplicaciones personalizadas se realiza de forma sencilla mediante las herramientas del desarrollador del SDK [de](https://github.com/adobe/asset-compute-sdk) Asset compute y de Project Firefly. Esto permite a los desarrolladores centrarse en la lógica empresarial. Crear aplicaciones personalizadas es tan sencillo como crear una acción de Adobe I/O Runtime sin servidor. Es una única función JavaScript de Node.js. El ejemplo [](https://github.com/adobe/asset-compute-example-workers/blob/master/projects/worker-basic/worker-basic.js) básico de la aplicación personalizada lo ilustra.
+Las aplicaciones personalizadas son aplicaciones [Project Firefly](https://github.com/AdobeDocs/project-firefly) sin encabezado. La ampliación de [!DNL Asset Compute Service] con aplicaciones personalizadas se hace sencilla mediante las herramientas para desarrolladores de [SDK de Asset compute](https://github.com/adobe/asset-compute-sdk) y Project Firefly. Esto permite a los desarrolladores centrarse en la lógica empresarial. Crear aplicaciones personalizadas es tan sencillo como crear una acción de Adobe I/O Runtime sin servidor. Es una única función JavaScript de Node.js. El [ejemplo de aplicación personalizada básica](https://github.com/adobe/asset-compute-example-workers/blob/master/projects/worker-basic/worker-basic.js) lo ilustra.
 
 ## Requisitos previos y requisitos de aprovisionamiento {#prerequisites-and-provisioning}
 
 Asegúrese de cumplir los siguientes requisitos previos:
 
 * Las herramientas de Project Firefly están instaladas en su equipo.
-* Una [!DNL Experience Cloud] organización. Más información [aquí](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/setup.md#acquire-access-and-credentials).
+* Una organización [!DNL Experience Cloud]. Más información [aquí](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/setup.md#acquire-access-and-credentials).
 * La organización de experiencias debe tener [!DNL Experience Manager] como Cloud Service habilitado.
-* [!DNL Adobe Experience Cloud] forma parte del programa de previsualización para [!DNL Project Firefly] desarrolladores. Consulte [cómo solicitar acceso](https://github.com/AdobeDocs/project-firefly/blob/master/overview/getting_access.md).
+* [!DNL Adobe Experience Cloud] forma parte del programa de previsualización para  [!DNL Project Firefly] desarrolladores. Consulte [cómo solicitar acceso](https://github.com/AdobeDocs/project-firefly/blob/master/overview/getting_access.md).
 * Asegúrese de que el programador tenga permisos de administrador o función de desarrollador en la organización.
-* Asegúrese de que la CLI [de E/S de](https://github.com/adobe/aio-cli) Adobe esté instalada localmente.
+* Asegúrese de que [Adobe I/O CLI](https://github.com/adobe/aio-cli) se instale localmente.
 
 <!-- TBD for later:
 
