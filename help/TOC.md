@@ -5,7 +5,7 @@ solution: Experience Manager
 type: Documentation
 audience: end-user
 user-guide-title: Guía del servicio de asset compute
-user-guide-description: Esta documentación [!DNL Asset Compute Service] cubre tareas como desarrollar, administrar, implementar y solucionar problemas del código personalizado.
+user-guide-description: Esta documentación cubre [!DNL Asset Compute Service] tareas como cómo desarrollar, administrar, implementar y solucionar problemas del código personalizado.
 breadcrumb-title: Guía del servicio de asset compute
 breadcrumb-url: /docs/asset-compute/using/home.html
 solution-title: AEM Assets
