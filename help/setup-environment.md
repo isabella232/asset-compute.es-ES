@@ -2,9 +2,9 @@
 title: Establezca el entorno de desarrollo necesario para [!DNL Asset Compute Service].
 description: Configuración de entorno de programadores para [!DNL Asset Compute Service] inicio para crear y probar código personalizado.
 translation-type: tm+mt
-source-git-commit: 1c2a1dc41296bf26c432c51b5afa20cb07a4c5c5
+source-git-commit: c392b8588929f7b13db13e42a3f17bbc4f68a376
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '374'
 ht-degree: 3%
 
 ---
@@ -32,7 +32,7 @@ Para crear una configuración que le permita desarrollarse para [!DNL Asset Comp
 
 1. Obtenga acceso a la función de administrador del sistema o de desarrollador en la organización de experiencias. Esto lo puede establecer un administrador del sistema en el [Admin Console](https://adminconsole.adobe.com/overview).
 
-1. Inicie sesión en la [Consola de programadores de Adobe](https://console.adobe.io/). Asegúrese de que forma parte de la misma organización de Adobe Experience Cloud que el AEM como integración de Cloud Service. Para obtener más información acerca de Adobe Developer Console, consulte [Documentación de la consola](https://www.adobe.io/apis/experienceplatform/console/docs.html).
+1. Inicie sesión en la [Consola de programadores de Adobe](https://console.adobe.io/). Asegúrese de que forma parte de la misma organización de Adobe Experience Cloud que la AEM como una integración [!DNL Cloud Service]. Para obtener más información acerca de Adobe Developer Console, consulte [Documentación de la consola](https://www.adobe.io/apis/experienceplatform/console/docs.html).
 
 1. [Crear un proyecto](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html#!AdobeDocs/project-firefly/master/getting_started/first_app.md) de luciérnagas. Haga clic en **[!UICONTROL Crear nuevo proyecto]** > **[!UICONTROL Proyecto a partir de plantilla]**. Seleccione Firefly. Crea un nuevo proyecto de luciérnagas con dos espacios de trabajo: `Production` y `Stage`. Añada espacios de trabajo adicionales, por ejemplo `Development`, según sea necesario.
 
