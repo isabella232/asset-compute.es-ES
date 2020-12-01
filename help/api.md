@@ -2,9 +2,9 @@
 title: '[!DNL Asset Compute Service] API HTTP.'
 description: '[!DNL Asset Compute Service] API HTTP para crear aplicaciones personalizadas.'
 translation-type: tm+mt
-source-git-commit: 79630efa8cee2c8919d11e9bb3c14ee4ef54d0f3
+source-git-commit: c392b8588929f7b13db13e42a3f17bbc4f68a376
 workflow-type: tm+mt
-source-wordcount: '2925'
+source-wordcount: '2921'
 ht-degree: 2%
 
 ---
@@ -12,11 +12,11 @@ ht-degree: 2%
 
 # [!DNL Asset Compute Service] API HTTP  {#asset-compute-http-api}
 
-El uso de la API se limita a fines de desarrollo. La API se proporciona como contexto al desarrollar aplicaciones personalizadas. [!DNL Adobe Experience Manager] como Cloud Service utiliza la API para pasar la información de procesamiento a una aplicación personalizada. Para obtener más información, consulte [Uso de microservicios de recursos y Perfiles de procesamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html).
+El uso de la API se limita a fines de desarrollo. La API se proporciona como contexto al desarrollar aplicaciones personalizadas. [!DNL Adobe Experience Manager] como  [!DNL Cloud Service] utiliza la API para pasar la información de procesamiento a una aplicación personalizada. Para obtener más información, consulte [Uso de microservicios de recursos y Perfiles de procesamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html).
 
 >[!NOTE]
 >
->[!DNL Asset Compute Service] sólo está disponible para su uso  [!DNL Experience Manager] como Cloud Service.
+>[!DNL Asset Compute Service] sólo está disponible para su uso  [!DNL Experience Manager] como  [!DNL Cloud Service].
 
 Cualquier cliente de la API HTTP [!DNL Asset Compute Service] debe seguir este flujo de alto nivel:
 
@@ -378,7 +378,7 @@ Estas son las opciones disponibles para la matriz `renditions` en [/process](#pr
 | `worker` | `string` | Dirección URL de una [aplicación personalizada](develop-custom-application.md). Debe ser una dirección URL `https://`. Si este campo está presente, la representación se crea mediante una aplicación personalizada. Cualquier otro campo de representación definido se utiliza en la aplicación personalizada. | `"https://1234.adobeioruntime.net`<br>`/api/v1/web`<br>`/example-custom-worker-master/worker"` |
 | `target` | `string` | Dirección URL a la que se debe cargar la representación generada mediante el PUT HTTP. | `http://w.com/img.jpg` |
 | `target` | `object` | Información de carga de URL prefirmada de varias partes para la representación generada. Esto es para [carga binaria directa de AEM/Oak](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html) con este [comportamiento de carga de varias partes](http://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/api/binary/BinaryUpload.html).<br>Fields:<ul><li>`urls`:: matriz de cadenas, una para cada URL de pieza prefirmada</li><li>`minPartSize`:: el tamaño mínimo que se debe usar para una parte = url</li><li>`maxPartSize`:: el tamaño máximo que se debe usar para una parte = url</li></ul> | `{ "urls": [ "https://part1...", "https://part2..." ], "minPartSize": 10000, "maxPartSize": 100000 }` |
-| `userData` | `object` | Espacio reservado opcional controlado por el cliente y transferido como es a eventos de representación. Permite a los clientes agregar información personalizada para identificar eventos de representación. No se debe modificar ni confiar en las aplicaciones personalizadas, ya que los clientes pueden cambiarlo en cualquier momento. | `{ ... }` |
+| `userData` | `object` | Espacio reservado opcional controlado por el cliente y transferido como es a los eventos de representación. Permite a los clientes agregar información personalizada para identificar eventos de representación. No se debe modificar ni confiar en las aplicaciones personalizadas, ya que los clientes pueden cambiarlo en cualquier momento. | `{ ... }` |
 
 ### Campos específicos de representación {#rendition-specific-fields}
 
