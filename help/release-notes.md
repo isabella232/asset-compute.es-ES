@@ -23,22 +23,22 @@ To test your custom applications with the [developer tool](https://github.com/ad
 >Cloud storage access is only required for using the developer tool. You can still create, test and deploy custom applications with out using the developer tool.
 -->
 
-## What is new {#what-is-new}
+## Novedades {#what-is-new}
 
-Esta es la primera versión de [!DNL Asset Compute Service]. Es un servicio ampliable y ampliable de [!DNL Adobe Experience Cloud] procesamiento de recursos digitales. Puede transformar formatos de imagen, vídeo, documento y otros archivos en distintas representaciones, incluidas miniaturas, texto extraído y metadatos, y archivos.
+Esta es la primera versión de [!DNL Asset Compute Service]. Es un servicio escalable y extensible de [!DNL Adobe Experience Cloud] para procesar activos digitales. Puede transformar formatos de imagen, vídeo, documento y otros archivos en distintas representaciones, incluidas miniaturas, texto extraído y metadatos, y archivos.
 
-Actualmente, el [!DNL Asset Compute Service] solo se puede usar [!DNL Experience Manager] como Cloud Service.
+Actualmente, el [!DNL Asset Compute Service] sólo se puede usar como Cloud Service en [!DNL Experience Manager].
 
 ## Limitaciones y problemas conocidos {#known-limitations}
 
-Para probar la aplicación personalizada con la herramienta [para](https://github.com/adobe/asset-compute-devtool)desarrolladores, necesita acceder a un contenedor [de almacenamiento de](https://github.com/adobe/asset-compute-devtool#prerequisites)nube.
+Para probar la aplicación personalizada con la [herramienta para desarrolladores](https://github.com/adobe/asset-compute-devtool), necesita acceder a un [contenedor de almacenamiento en la nube](https://github.com/adobe/asset-compute-devtool#prerequisites).
 
-* El acceso al almacenamiento en la nube (distinto del almacén de [!DNL Experience Manager] blob) solo es necesario para la herramienta para desarrolladores. Aún puede crear, probar e implementar aplicaciones personalizadas sin la herramienta para desarrolladores.
+* El acceso al almacenamiento en la nube (distinto del almacén de blobs [!DNL Experience Manager]) solo es necesario para la herramienta para desarrolladores. Aún puede crear, probar e implementar aplicaciones personalizadas sin la herramienta para desarrolladores.
 * Puede ser un contenedor compartido utilizado por varios desarrolladores en diferentes proyectos.
 
 ## Contribute {#contribute-open-source}
 
-[!DNL Asset Compute Service] la extensibilidad se desarrolla bajo un modelo de desarrollo abierto en [github.com/adobe](https://github.com/adobe) que acoge con satisfacción las contribuciones de los desarrolladores de extensiones. Todos los componentes relevantes para desarrollar, crear, probar e implementar aplicaciones personalizadas son de código abierto. Consulte [cómo y dónde contribuir al servicio](contribute-to-compute-service.md)de cómputo.
+[!DNL Asset Compute Service] la extensibilidad se desarrolla bajo un modelo de desarrollo abierto en  [github.com/](https://github.com/adobe) adobeque da la bienvenida a las contribuciones de los desarrolladores de extensiones. Todos los componentes relevantes para desarrollar, crear, probar e implementar aplicaciones personalizadas son de código abierto. Consulte [cómo y dónde contribuir al servicio de cómputo](contribute-to-compute-service.md).
 
 <!-- **TBD:**
 * Are we versioning the releases?
