@@ -1,8 +1,8 @@
 ---
-source-git-commit: 0a0feacbcd6456e01a6d451f9954ab21c1a8bce3
+source-git-commit: 78c1246f5fc42006013701a6cf4d375a1d8c9fd8
 workflow-type: tm+mt
 translation-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '646'
 ht-degree: 5%
 
 ---
@@ -30,9 +30,9 @@ Las excepciones a esta regla son las notas de la versión en las que los problem
 
 ### Las contribuciones de documentación no responden a las consultas de los clientes
 
-Cualquier idea que tenga para mejorar la documentación es bienvenida como contribución. Sin embargo, los comentarios, los problemas y las solicitudes de extracción solo están destinados a *contribuciones* . No están pensados para utilizarse para responder a sus preguntas sobre cómo utilizar el producto, implementar proyectos o resolver problemas técnicos.
+Cualquier idea que tenga para mejorar la documentación es bienvenida como contribución. Sin embargo, los comentarios, los problemas y las solicitudes de extracción están destinados únicamente a *contribuciones*. No están pensados para utilizarse para responder a sus preguntas sobre cómo utilizar el producto, implementar proyectos o resolver problemas técnicos.
 
-Cualquier pregunta sobre el uso o los errores técnicos que pueda tener debe informarse a través del proceso de asistencia técnica normal a través del portal [de asistencia técnica empresarial de](https://helpx.adobe.com/es/contact/enterprise-support.ec.html) Experience Cloud o analizarse en la comunidad [de](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)Experience Manager.
+Cualquier pregunta sobre el uso o los errores técnicos que pueda tener debe informarse a través del proceso de soporte normal a través del [[!DNL Experience Cloud] portal de soporte empresarial](https://helpx.adobe.com/es/contact/enterprise-support.ec.html) o discutirse en la [[!DNL Experience Manager] comunidad](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community).
 
 Las contribuciones a la documentación no sustituyen a Adobe Customer Care*** y se rechazará cualquier contribución que busque respuestas a preguntas relacionadas con la asistencia.
 
@@ -60,7 +60,7 @@ Recuerde que los lectores de la documentación son de todo el mundo y no se pued
 
 #### Seguir el Manual de estilo de Microsoft
 
-[El Manual de estilo](https://docs.microsoft.com/en-us/style-guide/welcome/) de Microsoft es una guía de estilo de documentación disponible libremente que se centra en la documentación de software.
+[Microsoft Manual of ](https://docs.microsoft.com/en-us/style-guide/welcome/) Stylees es una guía de estilo de documentación disponible libremente que se centra en la documentación de software.
 
 ### Formato
 
