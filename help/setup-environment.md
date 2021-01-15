@@ -2,9 +2,9 @@
 title: Establezca el entorno de desarrollo necesario para [!DNL Asset Compute Service].
 description: Configuración de entorno de programadores para [!DNL Asset Compute Service] inicio para crear y probar código personalizado.
 translation-type: tm+mt
-source-git-commit: 0ecf2c044c7847029fb10ce37f4b831c58b93fe9
+source-git-commit: 7e520921ebb459c963d61d70c66497b8e62521cf
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '372'
 ht-degree: 3%
 
 ---
@@ -24,7 +24,7 @@ Para crear una configuración que le permita desarrollarse para [!DNL Asset Comp
    * [Docker Desktop](https://www.docker.com/get-started).
    * [NodeJS](https://nodejs.org) (v10 a v12 LTS, no se recomiendan versiones impares) y  [NPM](https://www.npmjs.com). El usuario de OSX HomeBrew puede hacer `brew install node` para instalar ambos. De lo contrario, descárguelo de la [página de descarga de NodeJS](https://nodejs.org/en/).
    * Un IDE que sea adecuado para NodeJS, recomendamos [Código de Visual Studio (Código VS)](https://code.visualstudio.com) ya que es el IDE admitido para el depurador. Puede utilizar cualquier otro IDE como editor de código, pero aún no se admite el uso avanzado (por ejemplo, depurador).
-   * [CLI](https://github.com/adobe/aio-cli)  de AIO(`aio`): instalación mediante  `npm install -g @adobe/aio-cli`.
+   * [[!DNL Adobe I/O] CLI](https://github.com/adobe/aio-cli) (`aio`): instalación mediante  `npm install -g @adobe/aio-cli`.
 
 1. Asegúrese de cumplir los [requisitos previos](/help/understand-extensibility.md#prerequisites-and-provisioning).
 
