@@ -2,9 +2,9 @@
 title: Solución de problemas [!DNL Asset Compute Service].
 description: Solucionar problemas y depurar aplicaciones personalizadas mediante [!DNL Asset Compute Service].
 translation-type: tm+mt
-source-git-commit: d26ae470507e187249a472ececf5f08d803a636c
+source-git-commit: 7e520921ebb459c963d61d70c66497b8e62521cf
 workflow-type: tm+mt
-source-wordcount: '290'
+source-wordcount: '288'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ Algunas sugerencias genéricas para la resolución de problemas que pueden ayuda
 * Asegúrese de que los errores que puedan surgir de la limpieza en caso de falla no generen sus propios errores que oculten el problema original.
 
 * Al iniciar la herramienta para desarrolladores por primera vez con una nueva integración [!DNL Asset Compute Service], es posible que falle la primera solicitud de procesamiento porque es posible que el Historial de Eventos de Asset compute no esté completamente configurado. Espere un tiempo para que el historial se configure antes de enviar otra solicitud.
-* Si se producen errores al enviar solicitudes de Asset compute `/register` o `/process`, asegúrese de que todas las API necesarias se agregan al [!DNL Adobe I/O] proyecto y espacio de trabajo, es decir, Asset compute, Eventos de E/S, administración de Eventos de E/S y tiempo de ejecución.
+* Si se producen errores al enviar solicitudes de Asset compute `/register` o `/process`, asegúrese de que se agregan todas las API necesarias al [!DNL Adobe I/O] Proyecto y espacio de trabajo, es decir, Assets computes, [!DNL Adobe I/O] Eventos, [!DNL Adobe I/O] Administración de Eventos y [!DNL Adobe I/O] Tiempo de ejecución.
 
 ## Iniciar sesión mediante [!DNL Adobe I/O] CLI {#login-via-aio-cli}
 
