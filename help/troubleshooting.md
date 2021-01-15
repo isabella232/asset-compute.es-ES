@@ -2,9 +2,9 @@
 title: Solución de problemas [!DNL Asset Compute Service].
 description: Solucionar problemas y depurar aplicaciones personalizadas mediante [!DNL Asset Compute Service].
 translation-type: tm+mt
-source-git-commit: 68d910cd092fccb599c361f24daff80460129e1c
+source-git-commit: d26ae470507e187249a472ececf5f08d803a636c
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '290'
 ht-degree: 1%
 
 ---
@@ -19,17 +19,17 @@ Algunas sugerencias genéricas para la resolución de problemas que pueden ayuda
 * Asegúrese de que los errores que puedan surgir de la limpieza en caso de falla no generen sus propios errores que oculten el problema original.
 
 * Al iniciar la herramienta para desarrolladores por primera vez con una nueva integración [!DNL Asset Compute Service], es posible que falle la primera solicitud de procesamiento porque es posible que el Historial de Eventos de Asset compute no esté completamente configurado. Espere un tiempo para que el historial se configure antes de enviar otra solicitud.
-* Si se producen errores al enviar solicitudes de Asset compute `/register` o `/process`, asegúrese de que todas las API necesarias se agregan al proyecto y al espacio de trabajo de Adobe I/O, es decir, Asset compute, Eventos de E/S, administración de Eventos de E/S y tiempo de ejecución.
+* Si se producen errores al enviar solicitudes de Asset compute `/register` o `/process`, asegúrese de que todas las API necesarias se agregan al [!DNL Adobe I/O] proyecto y espacio de trabajo, es decir, Asset compute, Eventos de E/S, administración de Eventos de E/S y tiempo de ejecución.
 
-## Iniciar sesión mediante CLI de Adobe I/O {#login-via-aio-cli}
+## Iniciar sesión mediante [!DNL Adobe I/O] CLI {#login-via-aio-cli}
 
-Si tiene problemas al iniciar sesión en [!DNL Adobe Developer Console] [mediante la CLI de Adobe I/O](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#3-signing-in-from-cli), agregue manualmente las credenciales necesarias para desarrollar, probar e implementar su aplicación personalizada:
+Si tiene problemas al iniciar sesión en [!DNL Adobe Developer Console] [mediante la [!DNL Adobe I/O] CLI](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#3-signing-in-from-cli), agregue manualmente las credenciales necesarias para desarrollar, probar e implementar su aplicación personalizada:
 
 1. Vaya al proyecto y al espacio de trabajo de Firefly en la [Consola de programadores de Adobe](https://console.adobe.io/) y pulse **[!UICONTROL Descargar]** desde la esquina superior derecha. Abra este archivo y guarde este JSON en un lugar seguro de su equipo.
 
 1. Vaya al archivo ENV de la aplicación Firefly.
 
-1. Añada las credenciales de Adobe I/O Runtime. Obtenga las credenciales de Adobe I/O Runtime del JSON descargado. Las credenciales están en `project.workspace.services.runtime`. Añada las credenciales del motor de ejecución de E/S en las variables `AIO_runtime_XXX`:
+1. Añada las [!DNL Adobe I/O] Credenciales de tiempo de ejecución. Obtenga las [!DNL Adobe I/O] credenciales de tiempo de ejecución del JSON descargado. Las credenciales están en `project.workspace.services.runtime`. Añada las [!DNL Adobe I/O] credenciales de tiempo de ejecución en las variables `AIO_runtime_XXX`:
 
    ```json
    AIO_runtime_auth=
