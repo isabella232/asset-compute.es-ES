@@ -2,9 +2,9 @@
 title: '[!DNL Asset Compute Service] API HTTP.'
 description: '[!DNL Asset Compute Service] API HTTP para crear aplicaciones personalizadas.'
 translation-type: tm+mt
-source-git-commit: c392b8588929f7b13db13e42a3f17bbc4f68a376
+source-git-commit: d26ae470507e187249a472ececf5f08d803a636c
 workflow-type: tm+mt
-source-wordcount: '2921'
+source-wordcount: '2906'
 ht-degree: 2%
 
 ---
@@ -68,11 +68,11 @@ Estos requieren que el proyecto [!DNL Adobe Developer Console] esté suscrito a 
    * metascope: `asset_compute_meta`
    * ámbitos: `asset_compute,read_organizations`
 
-* eventos Adobe I/O
+* [!DNL Adobe I/O] Sucesos
    * metascope: `event_receiver_api`
    * ámbitos: `event_receiver,event_receiver_api`
 
-* API de administración de Adobe I/O
+* [!DNL Adobe I/O] API de administración
    * metascope: `ent_adobeio_sdk`
    * ámbitos: `adobeio_api,additional_info.roles,additional_info.projectedProductContext`
 
@@ -378,7 +378,7 @@ Estas son las opciones disponibles para la matriz `renditions` en [/process](#pr
 | `worker` | `string` | Dirección URL de una [aplicación personalizada](develop-custom-application.md). Debe ser una dirección URL `https://`. Si este campo está presente, la representación se crea mediante una aplicación personalizada. Cualquier otro campo de representación definido se utiliza en la aplicación personalizada. | `"https://1234.adobeioruntime.net`<br>`/api/v1/web`<br>`/example-custom-worker-master/worker"` |
 | `target` | `string` | Dirección URL a la que se debe cargar la representación generada mediante el PUT HTTP. | `http://w.com/img.jpg` |
 | `target` | `object` | Información de carga de URL prefirmada de varias partes para la representación generada. Esto es para [carga binaria directa de AEM/Oak](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html) con este [comportamiento de carga de varias partes](http://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/api/binary/BinaryUpload.html).<br>Fields:<ul><li>`urls`:: matriz de cadenas, una para cada URL de pieza prefirmada</li><li>`minPartSize`:: el tamaño mínimo que se debe usar para una parte = url</li><li>`maxPartSize`:: el tamaño máximo que se debe usar para una parte = url</li></ul> | `{ "urls": [ "https://part1...", "https://part2..." ], "minPartSize": 10000, "maxPartSize": 100000 }` |
-| `userData` | `object` | Espacio reservado opcional controlado por el cliente y transferido como es a los eventos de representación. Permite a los clientes agregar información personalizada para identificar eventos de representación. No se debe modificar ni confiar en las aplicaciones personalizadas, ya que los clientes pueden cambiarlo en cualquier momento. | `{ ... }` |
+| `userData` | `object` | Espacio reservado opcional controlado por el cliente y transferido como es a eventos de representación. Permite a los clientes agregar información personalizada para identificar eventos de representación. No se debe modificar ni confiar en las aplicaciones personalizadas, ya que los clientes pueden cambiarlo en cualquier momento. | `{ ... }` |
 
 ### Campos específicos de representación {#rendition-specific-fields}
 
@@ -412,9 +412,9 @@ El formato PNG se utiliza como marca de agua.
 
 ## Eventos asincrónicos {#asynchronous-events}
 
-Una vez finalizado el procesamiento de una representación o cuando se produce un error, se envía un evento a un [Historial de Eventos de Adobe I/O](https://www.adobe.io/apis/experienceplatform/events/documentation.html#!adobedocs/adobeio-events/master/intro/journaling_api.md). Los clientes deben escuchar la dirección URL del historial proporcionada a través de [/register](#register). La respuesta de historial incluye una matriz `event` compuesta por un objeto para cada evento, de la cual el campo `event` incluye la carga útil de evento real.
+Una vez finalizado el procesamiento de una representación o cuando se produce un error, se envía un evento a un Historial [[!DNL Adobe I/O] Eventos](https://www.adobe.io/apis/experienceplatform/events/documentation.html#!adobedocs/adobeio-events/master/intro/journaling_api.md). Los clientes deben escuchar la dirección URL del historial proporcionada a través de [/register](#register). La respuesta de historial incluye una matriz `event` compuesta por un objeto para cada evento, de la cual el campo `event` incluye la carga útil de evento real.
 
-El Tipo de evento de Adobe I/O para todos los eventos del [!DNL Asset Compute Service] es `asset_compute`. El historial solo se suscribe automáticamente a este tipo de evento y no es necesario filtrar según el Tipo de evento de Adobe I/O. Los tipos de evento específicos del servicio están disponibles en la propiedad `type` del evento.
+El Tipo de evento [!DNL Adobe I/O] para todos los eventos del [!DNL Asset Compute Service] es `asset_compute`. El historial se suscribe automáticamente únicamente a este tipo de evento y no hay más requisitos para filtrar según el Tipo de evento [!DNL Adobe I/O]. Los tipos de evento específicos del servicio están disponibles en la propiedad `type` del evento.
 
 ### Tipos de evento {#event-types}
 
