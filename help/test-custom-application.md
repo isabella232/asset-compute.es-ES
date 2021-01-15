@@ -2,9 +2,9 @@
 title: Probar y depurar [!DNL Asset Compute Service] aplicación personalizada.
 description: Probar y depurar [!DNL Asset Compute Service] aplicación personalizada.
 translation-type: tm+mt
-source-git-commit: 54afa44d8d662ee1499a385f504fca073ab6c347
+source-git-commit: 7e520921ebb459c963d61d70c66497b8e62521cf
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '787'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ El módulo de prueba de la unidad de aplicación de Asset compute permite probar
 
 ### Añadir pruebas {#add-tests}
 
-Se esperan pruebas dentro de la carpeta `test` en el nivel raíz del proyecto de AIO. Los casos de prueba de cada aplicación deben estar en la ruta `test/asset-compute/<worker-name>`, con una carpeta para cada caso de prueba:
+Se esperan pruebas dentro de la carpeta `test` en el nivel raíz del proyecto [!DNL Adobe I/O]. Los casos de prueba de cada aplicación deben estar en la ruta `test/asset-compute/<worker-name>`, con una carpeta para cada caso de prueba:
 
 ```yaml
 action/
