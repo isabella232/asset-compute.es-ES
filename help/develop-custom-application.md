@@ -2,9 +2,9 @@
 title: Desarrollar para [!DNL Asset Compute Service].
 description: Cree aplicaciones personalizadas con [!DNL Asset Compute Service].
 translation-type: tm+mt
-source-git-commit: 576936cc7527fc4cb43c0859a61df5fecc0bc3a8
+source-git-commit: d26ae470507e187249a472ececf5f08d803a636c
 workflow-type: tm+mt
-source-wordcount: '1569'
+source-wordcount: '1560'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Antes de comenzar a desarrollar una aplicación personalizada:
 
 ## Crear una aplicación personalizada {#create-custom-application}
 
-Asegúrese de tener la [CLI de Adobe I/O](https://github.com/adobe/aio-cli) instalada localmente.
+Asegúrese de tener la [[!DNL Adobe I/O] CLI](https://github.com/adobe/aio-cli) instalada localmente.
 
 1. Para crear una aplicación personalizada, [cree una aplicación de Firefly](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#4-bootstrapping-new-app-using-the-cli). Para hacerlo, ejecute `aio app init <app-name>` en su terminal.
 
@@ -32,7 +32,7 @@ Asegúrese de tener la [CLI de Adobe I/O](https://github.com/adobe/aio-cli) inst
 
    ```sh
    $ aio app init <app-name>
-   Retrieving information from Adobe I/O Console..
+   Retrieving information from [!DNL Adobe I/O] Console.
    ? Select Org My Adobe Org
    ? Select Project MyFireflyProject
    ? Select Workspace myworkspace
@@ -121,7 +121,7 @@ Añada las siguientes credenciales para la herramienta para desarrolladores en e
 
 Antes de ejecutar la aplicación con la herramienta para desarrolladores de Asset compute, configure correctamente las [credenciales](#developer-tool-credentials).
 
-Para ejecutar la aplicación en la herramienta para desarrolladores, utilice el comando `aio app run`. Implementa la acción en Adobe I/O Runtime y inicio la herramienta de desarrollo en su equipo local. Esta herramienta se utiliza para probar las solicitudes de aplicación durante el desarrollo. A continuación se muestra un ejemplo de solicitud de representación:
+Para ejecutar la aplicación en la herramienta para desarrolladores, utilice el comando `aio app run`. Implementa la acción en [!DNL Adobe I/O] Runtime y inicio la herramienta de desarrollo en el equipo local. Esta herramienta se utiliza para probar las solicitudes de aplicación durante el desarrollo. A continuación se muestra un ejemplo de solicitud de representación:
 
 ```json
 "renditions": [
@@ -266,7 +266,7 @@ const key = params.secretKey;
 
 ## Cambio de tamaño de aplicaciones {#sizing-workers}
 
-Una aplicación se ejecuta en un contenedor de Adobe I/O Runtime con [límites](https://www.adobe.io/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/guides/system_settings.md) que se pueden configurar mediante `manifest.yml`:
+Una aplicación se ejecuta en un contenedor en [!DNL Adobe I/O] tiempo de ejecución con [límites](https://www.adobe.io/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/guides/system_settings.md) que se pueden configurar mediante el `manifest.yml`:
 
 ```yaml
     actions:
