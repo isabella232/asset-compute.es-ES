@@ -2,9 +2,9 @@
 title: Desarrollar para [!DNL Asset Compute Service].
 description: Cree aplicaciones personalizadas con [!DNL Asset Compute Service].
 translation-type: tm+mt
-source-git-commit: d26ae470507e187249a472ececf5f08d803a636c
+source-git-commit: 7e520921ebb459c963d61d70c66497b8e62521cf
 workflow-type: tm+mt
-source-wordcount: '1560'
+source-wordcount: '1562'
 ht-degree: 0%
 
 ---
@@ -282,7 +282,7 @@ Debido al procesamiento más extenso que suelen realizar las aplicaciones de Ass
 
 El tiempo de espera predeterminado para acciones en tiempo de ejecución es de un minuto, pero se puede aumentar estableciendo el límite `timeout` (en milisegundos). Si espera procesar archivos más grandes, aumente esta vez. Considere el tiempo total que se tarda en descargar el origen, procesar el archivo y cargar la representación. Si se agota el tiempo de espera de una acción, es decir, no devuelve la activación antes del límite de tiempo de espera especificado, Runtime descarta el contenedor y no lo reutiliza.
 
-Las aplicaciones de asset compute por naturaleza tienden a estar enlazadas a E/S de red y de disco. El archivo de origen debe descargarse primero, el procesamiento suele ser de alta E/S y, a continuación, las representaciones resultantes se cargan de nuevo.
+Las aplicaciones de asset compute por naturaleza tienden a estar enlazadas a la entrada o salida de red y disco. El archivo de origen debe descargarse primero, el procesamiento suele requerir muchos recursos y, a continuación, las representaciones resultantes se cargan de nuevo.
 
 La memoria disponible para un contenedor de acción se especifica mediante `memorySize` en MB. Actualmente, esto también define cuánto acceso de CPU obtiene el contenedor y, lo que es más importante, es un elemento clave del costo de usar Runtime (los contenedores más grandes cuestan más). Utilice aquí un valor mayor cuando el procesamiento requiera más memoria o CPU, pero tenga cuidado de no desperdiciar recursos, ya que cuanto más grandes sean los contenedores, menor será el rendimiento general.
 
