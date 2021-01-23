@@ -1,9 +1,9 @@
 ---
 cloud: experience-cloud
-product: Asset Compute Service
-solution: Experience Manager
+product: asset compute service
+solution: Experience Manager, Experience Manager Assets
 type: Documentation
-audience: end-user
+role: Developer
 user-guide-title: Guía del servicio de asset compute
 user-guide-description: Esta documentación cubre [!DNL Asset Compute Service] tareas como cómo desarrollar, administrar, implementar y solucionar problemas del código personalizado.
 breadcrumb-title: Guía del servicio de asset compute
@@ -14,7 +14,7 @@ getting-started-url: https://experienceleague.adobe.com/docs/experience-manager-
 tutorials-title: Tutoriales de AEM
 tutorials-url: https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html
 translation-type: tm+mt
-source-git-commit: c392b8588929f7b13db13e42a3f17bbc4f68a376
+source-git-commit: 95e384d2a298b3237d4f93673161272744e7f44a
 workflow-type: tm+mt
 source-wordcount: '120'
 ht-degree: 13%
