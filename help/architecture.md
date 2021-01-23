@@ -1,8 +1,8 @@
 ---
-title: Arquitectura de [!DNL Asset Compute Service].
+title: Arquitectura de [!DNL Asset Compute Service]
 description: Cómo [!DNL Asset Compute Service] API, aplicaciones y SDK funcionan juntos para proporcionar un servicio de procesamiento de recursos nativo de la nube.
 translation-type: tm+mt
-source-git-commit: d26ae470507e187249a472ececf5f08d803a636c
+source-git-commit: 95e384d2a298b3237d4f93673161272744e7f44a
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 0%
