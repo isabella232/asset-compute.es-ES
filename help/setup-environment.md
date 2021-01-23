@@ -1,8 +1,8 @@
 ---
-title: Establezca el entorno de desarrollo necesario para [!DNL Asset Compute Service].
+title: Configure el entorno de desarrollo necesario para [!DNL Asset Compute Service]
 description: Configuración de entorno de programadores para [!DNL Asset Compute Service] inicio para crear y probar código personalizado.
 translation-type: tm+mt
-source-git-commit: 7e520921ebb459c963d61d70c66497b8e62521cf
+source-git-commit: 95e384d2a298b3237d4f93673161272744e7f44a
 workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 3%
