@@ -117,7 +117,7 @@ El `batchWorker()` tiene un comportamiento diferente, ya que en realidad procesa
 
 ## [!DNL Adobe I/O] Sucesos {#aio-events}
 
-El SDK envía [!DNL Adobe I/O] Eventos para cada representación. Estos eventos son de tipo `rendition_created` o `rendition_failed` según el resultado. Consulte [eventos asincrónicos de Asset compute](api.md#asynchronous-events) para obtener más información sobre los eventos.
+El SDK envía [!DNL Adobe I/O] Eventos para cada representación. Estos eventos son de tipo `rendition_created` o `rendition_failed` según el resultado. Consulte [eventos asincrónicos de Asset compute](api.md#asynchronous-events) para obtener más información sobre eventos.
 
 ## Recibir [!DNL Adobe I/O] Eventos {#receive-aio-events}
 
