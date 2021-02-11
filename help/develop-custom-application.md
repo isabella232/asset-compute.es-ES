@@ -2,9 +2,9 @@
 title: Desarrollar para [!DNL Asset Compute Service]
 description: Cree aplicaciones personalizadas con [!DNL Asset Compute Service].
 translation-type: tm+mt
-source-git-commit: 95e384d2a298b3237d4f93673161272744e7f44a
+source-git-commit: 33b72b164faeda2dd425656209790f019ccec96e
 workflow-type: tm+mt
-source-wordcount: '1562'
+source-wordcount: '1615'
 ht-degree: 0%
 
 ---
@@ -96,11 +96,14 @@ Añada las siguientes credenciales para la herramienta para desarrolladores en e
    ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH=
    ```
 
-1. Si el `console.json` no está en la raíz directamente de la aplicación Firefly, agregue la ruta absoluta al archivo JSON de integración de la consola de desarrollador de Adobe. Es el mismo archivo [`console.json`](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#42-developer-is-not-logged-in-as-enterprise-organization-user) que se descarga en el área de trabajo del proyecto. También puede utilizar el comando `aio app use <path_to_console_json>` en lugar de agregar la ruta al archivo ENV.
+1. Descargue el archivo desde Adobe Developer Console. Vaya a la raíz del proyecto y haga clic en &quot;Descargar todo&quot; en la esquina superior derecha. El archivo se descarga con `<namespace>-<workspace>.json` como nombre de archivo. Realice una de las acciones siguientes:
 
-   ```conf
-   ASSET_COMPUTE_INTEGRATION_FILE_PATH=
-   ```
+   * Cambie el nombre del archivo como `config.json` y muévalo a la raíz del proyecto.
+   * Opcionalmente, puede agregar la ruta absoluta al archivo JSON de integración de la consola de desarrollador de Adobe. Es el mismo archivo [`console.json`](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#42-developer-is-not-logged-in-as-enterprise-organization-user) que se descarga en el área de trabajo del proyecto.
+
+      ```conf
+      ASSET_COMPUTE_INTEGRATION_FILE_PATH=
+      ```
 
 1. Añada las credenciales de almacenamiento de S3 o Azure. Solo necesita acceder a una solución de almacenamiento en la nube.
 
@@ -116,6 +119,10 @@ Añada las siguientes credenciales para la herramienta para desarrolladores en e
    AZURE_STORAGE_KEY=
    AZURE_STORAGE_CONTAINER_NAME=
    ```
+
+>[!TIP]
+>
+>El archivo `config.json` contiene credenciales. Desde su proyecto, agregue el archivo JSON al archivo `.gitignore` para evitar que se comparta. Lo mismo se aplica a los archivos .env y .aio.
 
 ## Ejecutar la aplicación {#run-custom-application}
 
