@@ -2,10 +2,9 @@
 title: Probar y depurar [!DNL Asset Compute Service] aplicación personalizada
 description: Probar y depurar [!DNL Asset Compute Service] aplicación personalizada.
 exl-id: c2534904-0a07-465e-acea-3cb578d3bc08
-translation-type: tm+mt
-source-git-commit: 9bc1534671c81a05798f98ae556d348bc771d975
+source-git-commit: ebc0d717b3f6fc4518f4a79cd44ebe8fdcf9ec6a
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '811'
 ht-degree: 0%
 
 ---
@@ -137,6 +136,10 @@ tests/
 ### Prueba de errores esperados {#test-unexpected-errors}
 
 Los casos de pruebas de error no deben contener un archivo `rendition.*` esperado y deben definir el `errorReason` esperado dentro del archivo `params.json`.
+
+>[!NOTE]
+>
+>Si un caso de prueba no contiene un archivo `rendition.*` esperado y no define el `errorReason` esperado dentro del archivo `params.json`, se supone que es un caso de error con cualquier `errorReason`.
 
 Estructura del caso de prueba de error:
 
