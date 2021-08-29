@@ -1,16 +1,15 @@
 ---
 title: Desarrollo para [!DNL Asset Compute Service]
 description: Cree aplicaciones personalizadas con [!DNL Asset Compute Service].
-translation-type: tm+mt
-source-git-commit: 7ae47fdb7ff91e1388d2037d90abe35fe5218216
+exl-id: a0c59752-564b-4bb6-9833-ab7c58a7f38e
+source-git-commit: eed9da4b20fe37a4e44ba270c197505b50cfe77f
 workflow-type: tm+mt
-source-wordcount: '1615'
+source-wordcount: '1605'
 ht-degree: 0%
 
 ---
 
-
-# Desarrollar una aplicación personalizada {#develop}
+# Desarrollo de una aplicación personalizada {#develop}
 
 Antes de comenzar a desarrollar una aplicación personalizada:
 
@@ -22,11 +21,11 @@ Antes de comenzar a desarrollar una aplicación personalizada:
 
 Asegúrese de tener la [[!DNL Adobe I/O] CLI](https://github.com/adobe/aio-cli) instalada localmente.
 
-1. Para crear una aplicación personalizada, [cree una aplicación Firefly](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#4-bootstrapping-new-app-using-the-cli). Para ello, ejecute `aio app init <app-name>` en su terminal.
+1. Para crear una aplicación personalizada, [cree una aplicación Firefly](https://www.adobe.io/project-firefly/docs/getting_started/first_app/#4-bootstrapping-new-app-using-the-cli). Para ello, ejecute `aio app init <app-name>` en su terminal.
 
-   Si aún no ha iniciado sesión, este comando le pedirá a un navegador que inicie sesión en la [Consola del desarrollador de Adobe](https://console.adobe.io/) con su Adobe ID. Consulte [aquí](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#3-signing-in-from-cli) para obtener más información sobre cómo iniciar sesión desde el cli.
+   Si aún no ha iniciado sesión, este comando le pedirá a un navegador que inicie sesión en la [Consola del desarrollador de Adobe](https://console.adobe.io/) con su Adobe ID. Consulte [aquí](https://www.adobe.io/project-firefly/docs/getting_started/first_app/#3-signing-in-from-cli) para obtener más información sobre cómo iniciar sesión desde el cli.
 
-   Adobe recomienda iniciar sesión. Si tiene problemas, siga las instrucciones [para crear una aplicación sin iniciar sesión](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#42-developer-is-not-logged-in-as-enterprise-organization-user).
+   Adobe recomienda iniciar sesión. Si tiene problemas, siga las instrucciones [para crear una aplicación sin iniciar sesión](https://www.adobe.io/project-firefly/docs/getting_started/first_app/#42-developer-is-not-logged-in-as-enterprise-organization-user).
 
 1. Después de iniciar sesión, siga los mensajes de la CLI y seleccione los `Organization`, `Project` y `Workspace` que se utilizarán para la aplicación. Elija el proyecto y el espacio de trabajo que creó al [configurar el entorno](setup-environment.md).
 
@@ -61,7 +60,7 @@ Asegúrese de tener la [[!DNL Adobe I/O] CLI](https://github.com/adobe/aio-cli) 
 
 1. Siga el resto de las indicaciones y abra la nueva aplicación en Visual Studio Code (o su editor de código favorito). Contiene el scaffolding y el código de ejemplo para una aplicación personalizada.
 
-   Lea aquí los [componentes principales de una aplicación Firefly](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#5-anatomy-of-a-project-firefly-application).
+   Lea aquí los [componentes principales de una aplicación Firefly](https://www.adobe.io/project-firefly/docs/getting_started/first_app/#5-anatomy-of-a-project-firefly-application).
 
    La aplicación de plantilla aprovecha nuestro [Asset compute SDK](https://github.com/adobe/asset-compute-sdk#asset-compute-sdk) para la carga, descarga y organización de representaciones de aplicaciones, de modo que los desarrolladores solo tengan que implementar la lógica de aplicación personalizada. Dentro de la carpeta `actions/<worker-name>` , el archivo `index.js` es donde se agrega el código de aplicación personalizado.
 
@@ -99,7 +98,7 @@ Agregue las siguientes credenciales para la herramienta de desarrollo al archivo
 1. Descargue el archivo desde Adobe Developer Console. Vaya a la raíz del proyecto y haga clic en Descargar todo en la esquina superior derecha. El archivo se descarga con `<namespace>-<workspace>.json` como nombre de archivo. Realice una de las acciones siguientes:
 
    * Cambie el nombre del archivo como `console.json` y muévalo a la raíz del proyecto.
-   * De forma opcional, puede agregar la ruta absoluta al archivo JSON de integración de Adobe Developer Console. Este es el mismo archivo [`console.json`](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#42-developer-is-not-logged-in-as-enterprise-organization-user) que se descarga en el espacio de trabajo del proyecto.
+   * De forma opcional, puede agregar la ruta absoluta al archivo JSON de integración de Adobe Developer Console. Este es el mismo archivo [`console.json`](https://www.adobe.io/project-firefly/docs/getting_started/first_app/#42-developer-is-not-logged-in-as-enterprise-organization-user) que se descarga en el espacio de trabajo del proyecto.
 
       ```conf
       ASSET_COMPUTE_INTEGRATION_FILE_PATH=
@@ -124,7 +123,7 @@ Agregue las siguientes credenciales para la herramienta de desarrollo al archivo
 >
 >El archivo `config.json` contiene credenciales. Desde el proyecto, agregue el archivo JSON a su archivo `.gitignore` para evitar que se comparta. Lo mismo se aplica a los archivos .env y .aio.
 
-## Ejecute la aplicación {#run-custom-application}
+## Ejecución de la aplicación {#run-custom-application}
 
 Antes de ejecutar la aplicación con la herramienta para desarrolladores de Asset compute, configure correctamente las [credenciales](#developer-tool-credentials).
 
@@ -152,7 +151,7 @@ A continuación se muestran ejemplos de aplicaciones personalizadas:
 * [secundario](https://github.com/adobe/asset-compute-example-workers/tree/master/projects/worker-basic)
 * [fotos obreras-animales](https://github.com/adobe/asset-compute-example-workers/tree/master/projects/worker-animal-pictures)
 
-### Plantilla de aplicación personalizada {#template-custom-application}
+### Aplicación personalizada de plantilla {#template-custom-application}
 
 El [worker-basic](https://github.com/adobe/asset-compute-example-workers/tree/master/projects/worker-basic) es una aplicación de plantilla. Genera una representación simplemente copiando el archivo de origen. El contenido de esta aplicación es la plantilla recibida al elegir `Adobe Asset Compute` en la creación de la aplicación de aio.
 
