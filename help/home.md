@@ -1,26 +1,23 @@
 ---
 title: '[!DNL Adobe Asset Compute Service] Guía del usuario'
-description: Esta documentación cubre [!DNL Asset Compute Service] tareas como introducción, cómo desarrollar, administrar, implementar y solucionar problemas del código personalizado.
-translation-type: tm+mt
-source-git-commit: 95e384d2a298b3237d4f93673161272744e7f44a
+description: Esta documentación abarca [!DNL Asset Compute Service] tareas como la introducción, cómo desarrollar, administrar, implementar y solucionar problemas del código personalizado.
+exl-id: 5acf87d1-a391-4802-bfce-e367fc8564df
+source-git-commit: a2460a0719f8c585ed72e44c904aa0df33301032
 workflow-type: tm+mt
-source-wordcount: '187'
+source-wordcount: '175'
 ht-degree: 4%
 
 ---
 
-
 # Acerca de [!DNL Asset Compute Service]
 
-[!DNL Asset Compute Service] es un servicio ampliable y ampliable de Adobe Experience Cloud para procesar recursos digitales. Puede transformar los formatos de imagen, vídeo, documento y otros archivos en distintas representaciones, como miniaturas, texto extraído y metadatos, archivos y mucho más. Los desarrolladores pueden plugin aplicaciones personalizadas (también denominadas trabajadores personalizados) para abordar casos de uso personalizados, generadas mediante [Project Firefly](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html) y ejecutándose en serverless [[!DNL Adobe I/O] Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html).
+[!DNL Asset Compute Service] es un servicio escalable y ampliable de Adobe Experience Cloud para procesar recursos digitales. Puede transformar formatos de imagen, vídeo, documento y otros archivos en distintas representaciones, incluidas miniaturas, texto extraído y metadatos, archivos y mucho más. Los desarrolladores pueden conectar aplicaciones personalizadas (también denominadas trabajadores personalizados) para tratar casos de uso personalizados, creadas con [Project Firefly](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html) y que se ejecutan en [[!DNL Adobe I/O] Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html) sin servidor.
 
-Esta documentación abarca [!DNL Asset Compute Service] temas como cómo desarrollar, administrar, implementar y solucionar problemas del código personalizado. Para saber qué es la oferta [!DNL Asset Compute Service], consulte esta [introducción](introduction.md). Consulte [lo que el servicio puede hacer por usted](introduction.md#possible-use-cases-benefits).
+Esta documentación cubre [!DNL Asset Compute Service] temas como cómo desarrollar, administrar, implementar y solucionar problemas del código personalizado. Para saber qué es la oferta [!DNL Asset Compute Service], consulte esta [introducción](introduction.md). Consulte [lo que el servicio puede hacer por usted](introduction.md#possible-use-cases-benefits).
 
-[!DNL Asset Compute Service] admite la conversión de muchos formatos de archivo y se integra con muchos servicios de Adobe. Consulte la lista de [formatos de archivo admitidos e integración de servicios](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/file-format-support.html).
+[!DNL Asset Compute Service] admite la conversión de muchos formatos de archivo y se integra con muchos servicios de Adobe. Consulte la lista de [formatos de archivo compatibles e integración de servicios](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/file-format-support.html).
 
-Para obtener información sobre la versión y cuáles son las últimas, consulte las [notas de la versión](/help/release-notes.md).
-
-Consulte una descripción general de las [capacidades de microservicios de recursos disponibles en [!DNL Adobe Experience Manager] como [!DNL Cloud Service]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html) y cómo utilizar los microservicios en [!DNL Experience Manager].
+Consulte una descripción general sobre las [funcionalidades de microservicios de recursos disponibles en [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html) y cómo utilizar los microservicios en [!DNL Experience Manager].
 
 <!--
 Possible to record the below info here in this landing page to centralize the miscellaneous info about Asset Compute Service?
