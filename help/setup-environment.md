@@ -1,10 +1,10 @@
 ---
 title: Establezca el entorno de desarrollo necesario para [!DNL Asset Compute Service]
-description: Configuración del entorno de desarrollador para [!DNL Asset Compute Service] comenzar a crear y probar código personalizado.
+description: Configuración del entorno del desarrollador para [!DNL Asset Compute Service] para empezar a crear y probar código personalizado.
 exl-id: 91c12889-01d8-4757-9bdd-f73c491cd9d5
-source-git-commit: 9404ffcc66a3b6ba206155d1b1a5c16a43e22a39
+source-git-commit: a50a3bdb520cbe608c5710716df80ac6e3b486e5
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '364'
 ht-degree: 3%
 
 ---
@@ -13,33 +13,37 @@ ht-degree: 3%
 
 Para crear una configuración que le permita desarrollarse para [!DNL Asset Compute Service], siga estos requisitos e instrucciones.
 
-1. [Adquiera acceso y ](https://www.adobe.io/project-firefly/docs/getting_started/#acquire-access-and-credentials) credenciales para  [!DNL Project Firefly].
+1. [Adquirir acceso y credenciales](https://www.adobe.io/project-firefly/docs/getting_started/#acquire-access-and-credentials) para [!DNL Project Firefly].
 
-1. [Configure el ](https://www.adobe.io/project-firefly/docs/getting_started/#local-environment-set-up) entorno local y las herramientas necesarias.
+1. [Configuración del entorno local](https://www.adobe.io/project-firefly/docs/getting_started/#local-environment-set-up) y las herramientas necesarias.
 
 1. Algunas herramientas más que le ayudarán a empezar a desarrollarse sin problemas son:
 
-   * [Git](https://git-scm.com/).
-   * [Docker Desktop](https://www.docker.com/get-started).
-   * [NodeJS](https://nodejs.org)  (v10 a v12 LTS, no se recomiendan las versiones impares) y  [NPM](https://www.npmjs.com). El usuario de OSX HomeBrew puede hacer `brew install node` para instalar ambos. De lo contrario, descárguelo desde la [página de descarga de NodeJS](https://nodejs.org/en/).
-   * Un IDE que sea adecuado para NodeJS, recomendamos [Visual Studio Code (VS Code)](https://code.visualstudio.com) ya que es el IDE admitido para Debugger. Puede utilizar cualquier otro IDE como editor de código, pero el uso avanzado (por ejemplo, depurador) aún no es compatible.
-   * [[!DNL Adobe I/O] CLI](https://github.com/adobe/aio-cli)  (`aio`): instalación mediante  `npm install -g @adobe/aio-cli@7.1.0`.
+   * [Git](https://git-scm.com/)
+   * [Docker Desktop](https://www.docker.com/get-started)
+   * [NodeJS](https://nodejs.org) (No se recomiendan las versiones 12 a 14 LTS) y [NPM](https://www.npmjs.com). El usuario de OSX HomeBrew puede hacer lo siguiente: `brew install node` para instalar ambos. De lo contrario, descárguelo desde la [Página de descarga de NodeJS](https://nodejs.org/en/)
+   * Un IDE que sea adecuado para NodeJS, recomendamos [Código de Visual Studio (Código VS)](https://code.visualstudio.com) ya que es el IDE admitido para Debugger. Puede utilizar cualquier otro IDE como editor de código, pero el uso avanzado (por ejemplo, depurador) aún no es compatible
+   * Instale la última[[!DNL Adobe I/O] CLI](https://github.com/adobe/aio-cli) (`aio`)
 
-1. Asegúrese de cumplir los [requisitos previos](/help/understand-extensibility.md#prerequisites-and-provisioning).
+   <!-- - install using `npm install -g @adobe/aio-cli@7.1.0` -->
 
+1. Asegúrese de cumplir con el [requisitos previos](/help/understand-extensibility.md#prerequisites-and-provisioning)
+
+<!--
 >[!NOTE]
 >
->Por ahora, utilice [!DNL Adobe I/O] CLI v7.1.0 de y no utilice [!DNL Adobe I/O] CLI v8.
+>For now, use [!DNL Adobe I/O] CLI v7.1.0 of and do not use [!DNL Adobe I/O] CLI v8.
+-->
 
-## Configuración de un proyecto de Firefly {#create-firefly-project}
+## Configuración de un proyecto de App Builder {#create-App-Builder-project}
 
-1. Asegúrese de la función de administrador del sistema o desarrollador en la organización [!DNL Experience Cloud]. Esto lo configura un administrador del sistema en el [Admin Console](https://adminconsole.adobe.com/overview).
+1. Asegúrese de que el administrador del sistema o el desarrollador cumplen la función de [!DNL Experience Cloud] organización. Esto lo configura un administrador del sistema en la variable [Admin Console](https://adminconsole.adobe.com/overview).
 
-1. Inicie sesión en [Adobe Developer Console](https://console.adobe.io/). Asegúrese de que forma parte de la misma organización [!DNL Experience Cloud] que la [!DNL Experience Manager] como integración [!DNL Cloud Service]. Para obtener más información sobre Adobe Developer Console, consulte [Documentación de la consola](https://www.adobe.io/apis/experienceplatform/console/docs.html).
+1. Inicie sesión en el [Consola de Adobe Developer](https://console.adobe.io/). Asegúrese de que forma parte del mismo [!DNL Experience Cloud] organización como [!DNL Experience Manager] como [!DNL Cloud Service] integración. Para obtener más información sobre la consola de Adobe Developer, consulte [Documentación de la consola](https://www.adobe.io/apis/experienceplatform/console/docs.html).
 
-1. [Crear un proyecto](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html#!AdobeDocs/project-firefly/master/getting_started/first_app.md) de Firefly. Haga clic en **[!UICONTROL Crear nuevo proyecto]** > **[!UICONTROL Proyecto a partir de la plantilla]**. Seleccione Firefly. Crea un nuevo proyecto de Firefly con dos espacios de trabajo: `Production` y `Stage`. Agregue espacios de trabajo adicionales, por ejemplo `Development`, según sea necesario.
+1. [Creación de un proyecto de App Builder](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html#!AdobeDocs/project-firefly/master/getting_started/first_app.md). Haga clic en **[!UICONTROL Crear nuevo proyecto]** > **[!UICONTROL Proyecto a partir de una plantilla]**. Seleccione Creador de aplicaciones. Se crea un nuevo proyecto de App Builder con dos espacios de trabajo: `Production` y `Stage`. Agregar espacios de trabajo adicionales, por ejemplo `Development`, según sea necesario.
 
-1. En el Proyecto Firefly, seleccione un espacio de trabajo y suscríbase a los servicios necesarios para el Asset compute. Haga clic en **Agregar al proyecto** > **API** y añada los servicios `Asset Compute`, `IO Events` y `IO Events Management`. Al añadir la primera API, se solicita la creación de una clave privada. Guarde esta información en el equipo, ya que necesita esta clave para probar la aplicación personalizada con la herramienta para desarrolladores.
+1. En el proyecto de App Builder, seleccione un espacio de trabajo y suscríbase a los servicios necesarios para el Asset compute. Haga clic en **Agregar a proyecto** > **API** y agregue `Asset Compute`, `IO Events`y `IO Events Management` servicios. Al añadir la primera API, se solicita la creación de una clave privada. Guarde esta información en el equipo, ya que necesita esta clave para probar la aplicación personalizada con la herramienta para desarrolladores.
 
 ## Paso siguiente {#next-step}
 
