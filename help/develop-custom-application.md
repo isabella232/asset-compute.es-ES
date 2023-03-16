@@ -2,7 +2,7 @@
 title: Desarrollo para [!DNL Asset Compute Service]
 description: Cree aplicaciones personalizadas mediante [!DNL Asset Compute Service].
 exl-id: a0c59752-564b-4bb6-9833-ab7c58a7f38e
-source-git-commit: a121b48d480b45405259c2061ac86b9ab46b89cb
+source-git-commit: 2dde177933477dc9ac2ff5a55af1fd2366e18359
 workflow-type: tm+mt
 source-wordcount: '1618'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Asegúrese de tener la variable [[!DNL Adobe I/O] CLI](https://github.com/adobe/
    $ aio app init <app-name>
    Retrieving information from [!DNL Adobe I/O] Console.
    ? Select Org My Adobe Org
-   ? Select Project MyFireflyProject
+   ? Select Project MyAdobe Developer App BuilderProject
    ? Which extension point(s) do you wish to implement ? (Press <space> to select, <a>
    to toggle all, <i> to invert selection)
    ❯◯ DX Experience Cloud SPA
@@ -97,10 +97,10 @@ Agregue las siguientes credenciales para la herramienta de desarrollo al archivo
    ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH=
    ```
 
-1. Descargue el archivo desde la consola de Adobe Developer. Vaya a la raíz del proyecto y haga clic en Descargar todo en la esquina superior derecha. El archivo se descarga con `<namespace>-<workspace>.json` como nombre de archivo. Realice una de las acciones siguientes:
+1. Descargue el archivo desde la consola de Adobe Developer. Vaya a la raíz del proyecto y haga clic en Descargar todo en la esquina superior derecha. El archivo se descarga con `<namespace>-<workspace>.json` como nombre de archivo. Realice una de las siguientes acciones:
 
    * Cambie el nombre del archivo como `console.json` y muévalo a la raíz del proyecto.
-   * De forma opcional, puede agregar la ruta absoluta al archivo JSON de integración de la consola de Adobe Developer. Esto es igual [`console.json`](https://www.adobe.io/project-firefly/docs/getting_started/first_app/#42-developer-is-not-logged-in-as-enterprise-organization-user) que se descarga en el espacio de trabajo del proyecto.
+   * De forma opcional, puede agregar la ruta absoluta al archivo JSON de integración de la consola de Adobe Developer. Esto es igual [`console.json`](https://developer.adobe.com/app-builder/docs/getting_started/first_app/#42-developer-is-not-logged-in-as-enterprise-organization-user) que se descarga en el espacio de trabajo del proyecto.
 
       ```conf
       ASSET_COMPUTE_INTEGRATION_FILE_PATH=

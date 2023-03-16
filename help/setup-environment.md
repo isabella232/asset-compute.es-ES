@@ -2,10 +2,10 @@
 title: Establezca el entorno de desarrollo necesario para [!DNL Asset Compute Service]
 description: Configuración del entorno del desarrollador para [!DNL Asset Compute Service] para empezar a crear y probar código personalizado.
 exl-id: 91c12889-01d8-4757-9bdd-f73c491cd9d5
-source-git-commit: 2b690ce37c0bac58abcb745e0b82018541434659
+source-git-commit: 2dde177933477dc9ac2ff5a55af1fd2366e18359
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '357'
+ht-degree: 4%
 
 ---
 
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 Para crear una configuración que le permita desarrollarse para [!DNL Asset Compute Service], siga estos requisitos e instrucciones.
 
-1. [Adquirir acceso y credenciales](https://www.adobe.io/project-firefly/docs/getting_started/#acquire-access-and-credentials) para [!DNL Project Firefly].
+1. [Adquirir acceso y credenciales](https://developer.adobe.com/app-builder/docs/getting_started/#acquire-access-and-credentials) para [!DNL Adobe Developer App Builder].
 
-1. [Configuración del entorno local](https://www.adobe.io/project-firefly/docs/getting_started/#local-environment-set-up) y las herramientas necesarias.
+1. [Configuración del entorno local](https://developer.adobe.com/app-builder/docs/getting_started/#local-environment-set-up) y las herramientas necesarias.
 
 1. Algunas herramientas más que le ayudarán a empezar a desarrollarse sin problemas son:
 
@@ -45,7 +45,7 @@ Para crear una configuración que le permita desarrollarse para [!DNL Asset Comp
 
 1. En el proyecto de App Builder, seleccione un espacio de trabajo y suscríbase a los servicios necesarios para el Asset compute. Haga clic en **Agregar a proyecto** > **API** y agregue `Asset Compute`, `IO Events`y `IO Events Management` servicios. Al añadir la primera API, se solicita la creación de una clave privada. Guarde esta información en el equipo, ya que necesita esta clave para probar la aplicación personalizada con la herramienta para desarrolladores.
 
-## Paso siguiente {#next-step}
+## Siguiente paso {#next-step}
 
 Ahora que el entorno está configurado, está listo para [crear una aplicación personalizada](develop-custom-application.md).
 

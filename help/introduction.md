@@ -2,10 +2,10 @@
 title: Introducción a [!DNL Asset Compute Service]
 description: '"[!DNL Asset Compute Service] es un servicio de procesamiento de recursos nativo de la nube que reduce la complejidad y mejora la escalabilidad".'
 exl-id: f8c89f65-5a94-44f3-aaac-4612ae291101
-source-git-commit: 93d3b407c8875888f03bec673d0a677a3205cfbb
+source-git-commit: 2dde177933477dc9ac2ff5a55af1fd2366e18359
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 0%
+source-wordcount: '309'
+ht-degree: 6%
 
 ---
 
@@ -13,19 +13,19 @@ ht-degree: 0%
 
 [!DNL Asset Compute Service] es un servicio ampliable y escalable de [!DNL Adobe Experience Cloud] para procesar recursos digitales. Puede transformar formatos de imagen, vídeo, documento y otros archivos en distintas representaciones, incluidas miniaturas, texto extraído y metadatos, y archivos.
 
-Los desarrolladores pueden agregar aplicaciones de recursos personalizados (también denominadas trabajadores personalizados) para tratar casos de uso personalizados. El servicio funciona en la variable [!DNL Adobe I/O] tiempo de ejecución. Se puede ampliar mediante [!DNL Project Firefly] aplicaciones sin encabezado escritas en Node.js. Pueden realizar operaciones personalizadas, como llamar a API externas para realizar operaciones de imagen o aprovechar [!DNL Adobe Sensei] asistencia técnica.
+Los desarrolladores pueden agregar aplicaciones de recursos personalizados (también denominadas trabajadores personalizados) para tratar casos de uso personalizados. El servicio funciona en la variable [!DNL Adobe I/O] tiempo de ejecución. Se puede ampliar mediante [!DNL Adobe Developer App Builder] aplicaciones sin encabezado escritas en Node.js. Pueden realizar operaciones personalizadas, como llamar a API externas para realizar operaciones de imagen o aprovechar [!DNL Adobe Sensei] asistencia técnica.
 
-[!DNL Project Firefly] es un marco para crear e implementar aplicaciones web personalizadas en [!DNL Adobe I/O] tiempo de ejecución para ampliar las soluciones de Adobe Experience Cloud. Para crear aplicaciones personalizadas, los desarrolladores pueden aprovechar [!DNL React Spectrum] (Kit de herramientas de la interfaz de Adobe), cree microservicios, cree eventos personalizados y organice API. Consulte [documentación del Proyecto Firefly](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html).
+[!DNL Adobe Developer App Builder] es un marco para crear e implementar aplicaciones web personalizadas en [!DNL Adobe I/O] tiempo de ejecución para ampliar las soluciones de Adobe Experience Cloud. Para crear aplicaciones personalizadas, los desarrolladores pueden aprovechar [!DNL React Spectrum] (Kit de herramientas de la interfaz de Adobe), cree microservicios, cree eventos personalizados y organice API. Consulte [documentación de Adobe Developer App Builder](https://developer.adobe.com/app-builder/docs/overview/).
 
 >[!NOTE]
 >
->Actualmente, la variable [!DNL Asset Compute Service] solo se puede usar mediante [!DNL Experience Manager] como [!DNL Cloud Service]. Los administradores crean perfiles de procesamiento que pueden llamar a la función [!DNL Asset Compute Service] para pasar recursos para su procesamiento. Consulte [usar microservicios de recursos y perfiles de procesamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html).
+>Actualmente, la variable [!DNL Asset Compute Service] solo se puede usar mediante [!DNL Experience Manager] como [!DNL Cloud Service]. Los administradores crean perfiles de procesamiento que pueden llamar a la función [!DNL Asset Compute Service] para pasar recursos para su procesamiento. Consulte [usar microservicios de recursos y perfiles de procesamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html?lang=es).
 
 ## Casos de uso admitidos de [!DNL Asset Compute Service] {#possible-use-cases-benefits}
 
 [!DNL Asset Compute Service] admite algunos casos de uso empresarial comunes, como el procesamiento básico de imágenes; conversiones específicas de la aplicación de Adobe; y la creación de aplicaciones personalizadas que orquesten requisitos empresariales complejos.
 
-Puede usar [!DNL Asset Compute] servicio web para generar miniaturas para diferentes tipos de archivo y renderizaciones de imágenes de alta calidad para el [formatos de archivo compatibles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/file-format-support.html). Consulte [casos de uso admitidos mediante configuración personalizada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html).
+Puede usar [!DNL Asset Compute] servicio web para generar miniaturas para diferentes tipos de archivo y renderizaciones de imágenes de alta calidad para el [formatos de archivo compatibles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/file-format-support.html). Consulte [casos de uso admitidos mediante configuración personalizada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html?lang=es).
 
 >[!NOTE]
 >
@@ -44,8 +44,8 @@ Puede usar [!DNL Asset Compute] servicio web para generar miniaturas para difere
 
 >[!MORELIKETHIS]
 >
->* [Resumen del procesamiento de recursos con microservicios de recursos en [!DNL Adobe Experience Manager] como [!DNL Cloud Service]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html).
->* [Documentación del Proyecto Firefly](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html).
+>* [Resumen del procesamiento de recursos con microservicios de recursos en [!DNL Adobe Experience Manager] como [!DNL Cloud Service]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html?lang=es).
+>* [Documentación de Adobe Developer App Builder](https://developer.adobe.com/app-builder/docs/overview).
 >* [Formatos de archivo compatibles con el procesamiento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/file-format-support.html).
 
 
