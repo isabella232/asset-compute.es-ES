@@ -8,13 +8,13 @@
                     <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 308px; height: 1px; padding-top: 209px; margin-left: 281px;">
                         <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
                             <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
-                                3rd party Namespace (Project Firefly)
+                                3rd party Namespace (Adobe Developer App Builder)
                             </div>
                         </div>
                     </div>
                 </foreignObject>
                 <text x="435" y="221" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">
-                    3rd party Namespace (Project Firefly)
+                    3rd party Namespace (Adobe Developer App Builder)
                 </text>
             </switch>
         </g>
@@ -136,13 +136,13 @@
                     <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 254px; height: 1px; padding-top: 239px; margin-left: 316px;">
                         <div style="box-sizing: border-box; font-size: 0; text-align: left; ">
                             <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; font-style: italic; white-space: normal; word-wrap: normal; ">
-                                Headless Firefly App
+                                Headless Adobe Developer App Builder App
                             </div>
                         </div>
                     </div>
                 </foreignObject>
                 <text x="316" y="251" fill="#000000" font-family="Helvetica" font-size="12px" font-style="italic">
-                    Headless Firefly App
+                    Headless Adobe Developer App Builder App
                 </text>
             </switch>
         </g>
