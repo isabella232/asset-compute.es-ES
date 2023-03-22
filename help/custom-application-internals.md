@@ -2,9 +2,9 @@
 title: Comprender el funcionamiento de una aplicación personalizada
 description: Trabajo interno de [!DNL Asset Compute Service] aplicación personalizada para comprender mejor cómo funciona.
 exl-id: a3ee6549-9411-4839-9eff-62947d8f0e42
-source-git-commit: a121b48d480b45405259c2061ac86b9ab46b89cb
+source-git-commit: 2af710443cdc2e5e25e105eca6e779eb58631ae9
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '751'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Utilice la siguiente ilustración para comprender el flujo de trabajo completo cuando un cliente procesa un recurso digital mediante una aplicación personalizada.
 
-![Flujo de trabajo de aplicaciones personalizadas](assets/customworker.png)
+![Flujo de trabajo de aplicaciones personalizadas](assets/customworker.svg)
 
 *Figura: Pasos para procesar un recurso mediante [!DNL Asset Compute Service].*
 
@@ -114,7 +114,7 @@ Después de crear y almacenar cada representación en un archivo con la ruta pro
 
 La variable `batchWorker()` tiene un comportamiento diferente, ya que en realidad procesa todas las representaciones y solo después de que todas se hayan procesado las carga.
 
-## [!DNL Adobe I/O] Sucesos {#aio-events}
+## [!DNL Adobe I/O] Eventos {#aio-events}
 
 El SDK envía [!DNL Adobe I/O] Eventos para cada representación. Estos eventos son de tipo `rendition_created` o `rendition_failed` según el resultado. Consulte [asset compute de eventos asincrónicos](api.md#asynchronous-events) para obtener más información sobre los eventos.
 
