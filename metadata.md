@@ -8,9 +8,10 @@ getting-started-url: https://experienceleague.adobe.com/docs/experience-manager-
 tutorials-title: Tutorials
 tutorials-url: https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html
 mini-toc-levels: 2
+feature-set: Experience Manager Assets
 git-repo: https://github.com/AdobeDocs/asset-compute.es-ES
 index: y
-source-git-commit: 5f987f28fdf8d074ceb6226d21a5f64aad67bf04
+source-git-commit: 66bad4afdc7b08e1e91418ec320b061e47c3683d
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 89%
@@ -25,7 +26,7 @@ El archivo metadata.md incluye metadatos de repositorios que pasan a los archivo
 | metadata | función |
 |--- |--- |
 | solution-title | Se utiliza en el encabezado del artículo como vínculo |
-| solution-hub-url | Abre la página de concentrador de asistencia |
+| solution-hub-url | Abre la página central de asistencia |
 | solution-icon | Muestra el icono de la solución junto al título de la solución. No implementado aún |
 | getting-started-url | Vínculo a la página de introducción |
 | tutorials-url | Vínculo a videotutoriales, tutoriales de ayuda o tutoriales de KT |
