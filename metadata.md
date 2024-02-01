@@ -11,10 +11,11 @@ mini-toc-levels: 2
 feature-set: Experience Manager Assets
 git-repo: https://github.com/AdobeDocs/asset-compute.es-ES
 index: y
-source-git-commit: 66bad4afdc7b08e1e91418ec320b061e47c3683d
+recommendations: noDisplay
+source-git-commit: cb87ab6081d53610acf27419fa5103b3ae1ead03
 workflow-type: tm+mt
-source-wordcount: '130'
-ht-degree: 89%
+source-wordcount: '128'
+ht-degree: 91%
 
 ---
 
